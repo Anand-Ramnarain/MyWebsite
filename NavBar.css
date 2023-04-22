@@ -1,0 +1,126 @@
+body {
+    background: white;
+}
+
+nav {
+    background: rgba(45, 44, 44, 0.6);
+    backdrop-filter: blur(7px);
+    height: 70px;
+    width: 100%;
+  }
+
+  .NameOfWeb {
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: lighter;
+    line-height: 70px;
+    background-color: rgba(0, 0, 0, 0);
+    margin: 0 50px;
+    padding: 50px 30px;
+  }
+  
+  nav ul{
+    float: right;
+    margin-right: 10px;
+  }
+  
+  nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 7px;
+  }
+  
+  nav ul li a{
+    font-size: 23px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    position: relative;
+  }
+
+  nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: center;
+    transition: transform 0.25s ease-out;
+  }
+
+  nav ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: center;
+  }
+
+  a.active{
+    background: none;
+    color: white;
+
+}
+
+#Iconlogo{
+    width: 60px;
+    margin: 0 0 -10px -300px;
+}
+
+.ShowAll{
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    float: right;
+    margin-right: 60px;
+    line-height: 80px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    .ShowAll{
+        display: block;
+    }
+
+    nav ul {
+        position: fixed;
+        width: 100%;
+        background-color: rgb(56, 55, 55);
+        height: 100vh;
+        text-align: center;
+        top: 60px;
+        left: -120%;
+        transition: all 1s;
+    }
+
+    nav ul li {
+        display: block;
+        padding: 30px 0;
+    }
+
+    nav ul li a {
+        font-size: 25px;
+        color: rgb(0, 0, 0);
+        text-transform: uppercase;
+        position: relative;
+    }
+
+    nav ul li a:hover{
+      color: #0087ca;
+      text-decoration: underline;
+      /* transform-origin: center; */
+      /* transition: transform 0.25s ease-out; */
+    }
+
+    a.active{
+      background: none;
+      color: white;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
