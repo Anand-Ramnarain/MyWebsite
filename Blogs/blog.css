@@ -1,21 +1,48 @@
 #blognav {
-    background: rgba(215, 18, 18, 0.6);
+    background: rgba(104, 104, 104, 0.415);
     backdrop-filter: blur(7px);
     height: 45px;
     width: 100%;
+    text-align: center;
 }
 
 .lnk {
     font-size: 23px;
-    color: rgb(0, 255, 72);
+    color: rgb(0, 0, 0);
     text-decoration: none;
     position:relative;
+    padding-inline: 30px;
 
 }
 
 #now {
     display: inline-block;
-    margin-right: 2px;
     margin-top: -10px;
+    text-align: center;
+}
+
+#allLnk {
+    float: left;
+    margin-left: 50px;
+}
+
+@media (max-width: 1800px) {
+    #blognav {
+        overflow: auto;
+        white-space: nowrap;
+    }
+
+    .lnk {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    .lnk a:hover{
+        background-color: antiquewhite;
+    }
+
+
 }
 

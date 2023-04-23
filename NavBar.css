@@ -2,8 +2,8 @@ body {
     background: white;
 }
 
-nav {
-    background: rgba(45, 44, 44, 0.6);
+#TNav {
+    background: rgba(45, 44, 44, 0.416);
     backdrop-filter: blur(7px);
     height: 70px;
     width: 100%;
@@ -19,25 +19,25 @@ nav {
     padding: 50px 30px;
   }
   
-  nav ul{
+  #Tul{
     float: right;
     margin-right: 10px;
   }
   
-  nav ul li{
+  #Tli{
     display: inline-block;
     margin-right: 20px;
     margin-top: 7px;
   }
   
-  nav ul li a{
+  #Ta{
     font-size: 23px;
     color: rgb(0, 0, 0);
     text-decoration: none;
     position: relative;
   }
 
-  nav ul li a::after {
+  #Ta::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -50,12 +50,12 @@ nav {
     transition: transform 0.25s ease-out;
   }
 
-  nav ul li a:hover::after {
+  #Ta:hover::after {
     transform: scaleX(1);
     transform-origin: center;
   }
 
-  a.active{
+  #Ta.active{
     background: none;
     color: white;
 
@@ -71,7 +71,7 @@ nav {
     color: rgb(0, 0, 0);
     float: right;
     margin-right: 60px;
-    line-height: 80px;
+    line-height: 70px;
     cursor: pointer;
     display: none;
 }
@@ -85,7 +85,7 @@ nav {
         display: block;
     }
 
-    nav ul {
+    #Tul {
         position: fixed;
         width: 100%;
         background-color: rgb(56, 55, 55);
@@ -96,31 +96,33 @@ nav {
         transition: all 1s;
     }
 
-    nav ul li {
+    #Tli {
         display: block;
         padding: 30px 0;
     }
 
-    nav ul li a {
+    #Ta {
         font-size: 25px;
         color: rgb(0, 0, 0);
         text-transform: uppercase;
         position: relative;
     }
 
-    nav ul li a:hover{
+    #Ta:hover{
       color: #0087ca;
       text-decoration: underline;
       /* transform-origin: center; */
       /* transition: transform 0.25s ease-out; */
     }
 
-    a.active{
+    #Ta.active{
       background: none;
       color: white;
     }
 
     #check:checked ~ ul{
         left: 0;
+        
+        
     }
 }

@@ -6,3 +6,16 @@ fetch('linkToBlog.html')
     newelem.innerHTML = text;
     oldelem.parentNode.replaceChild(newelem,oldelem);
 })
+
+
+    var box = document.getElementById("blognav");
+    var checkbox = document.getElementById("check");
+
+    checkbox.addEventListener("change", function(){
+        if(checkbox.checked) {
+            box.style.visibility = "hidden";
+        } else {
+            box.style.visibility = "visible";
+        }
+    })
+    
