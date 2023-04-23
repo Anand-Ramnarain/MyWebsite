@@ -1,0 +1,90 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+/* Styling of the Layers */
+.WrapperContainer {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.Page1 {
+  background-color: rgb(114, 148, 209);
+  color:#000000;
+  transition: left 0.5s cubic-bezier(.25,0.1,.25,1);
+}
+
+.Page2 {
+  background-color: rgb(255, 255, 255);
+  left: 100%;
+  transition: left 0.5s cubic-bezier(.25,0.1,.25,1);
+}
+
+/* General Styling */
+.NavigationLayer {
+  height: 5%;
+  border-bottom: 2px solid azure;
+}
+#Navigation {
+    background: rgba(104, 104, 104, 0.415);
+    backdrop-filter: blur(7px);
+    height: 45px;
+    width: 100%;
+    text-align: center;
+}
+
+a[id="Page1"],
+a[id="Page2"] {
+  display: none;
+}
+
+/* Common Styles */
+.BaseLayers {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  padding-top: 2.5%;
+}
+
+a[id="Page1"]:target ~ main > section#PageOne,
+a[id="Page2"]:target ~ main > section#PageTwo{
+  left: 0;
+}
+
+a{
+  color: rgb(0, 0, 0);
+}
+
+a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ca0000;
+    transform-origin: center;
+    transition: transform 0.25s ease-out;
+  }
+
+a:hover::after {
+    transform: scaleX(1);
+    transform-origin: center;
+  }
+
+#callOne {
+    font-size: 30px;
+    position: relative; top:4px; right: 300px;
+    text-decoration: none;
+
+}
+
+#callTwo {
+    font-size: 30px;
+    position: relative; top:4px; left: 300px;
+    text-decoration: none;
+}

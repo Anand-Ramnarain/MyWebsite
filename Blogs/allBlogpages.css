@@ -20,4 +20,24 @@ h1 {
     padding: 50px;
 }
 
+.previous {
+    background-color: #04AA6D;
+    background-size: 30px;
+    font-size: 30px;
+    color: white;
+    position: relative; bottom: 10px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .next {
+    background-color: #04AA6D;
+    background-size: 30px;
+    font-size: 30px;
+    color: white;
+    position: relative; left:85%; bottom: 10px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
 
