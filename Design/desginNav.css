@@ -2,7 +2,7 @@ html,
 body {
   height: 100%;
   width: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .WrapperContainer {
@@ -81,7 +81,7 @@ a::after {
   }
 
 .Page3 {
-    background-color: rgb(133, 64, 64);
+    background-color: rgb(45, 93, 151);
     left: 100%;
     transition: left 0.5s cubic-bezier(.25,0.1,.25,1);
 }

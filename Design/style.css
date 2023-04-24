@@ -1,0 +1,31 @@
+.Style{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.Head{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 25;
+}
+
+.sHead{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 22px;
+    margin-left: 5px;
+}
+
+.HomeFrame {
+  border-radius: 2-px;
+  width: 100%;
+  display: block;
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+}
+
+.TextBet {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    margin-left: 10px;
+}

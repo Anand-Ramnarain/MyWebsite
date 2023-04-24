@@ -1,3 +1,9 @@
+html,
+body {
+  /* overflow: hidden; */
+  overflow-x: hidden;
+  background-color: rgb(114, 148, 209);
+}
 h1 {
     text-align: center;
     text-decoration: underline;
@@ -21,7 +27,7 @@ h1 {
 }
 
 .previous {
-    background-color: #04AA6D;
+    background-color: #000000;
     background-size: 30px;
     font-size: 30px;
     color: white;
@@ -31,7 +37,7 @@ h1 {
   }
   
   .next {
-    background-color: #04AA6D;
+    background-color: #000000;
     background-size: 30px;
     font-size: 30px;
     color: white;

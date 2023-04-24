@@ -1,5 +1,6 @@
 body {
     background: white;
+    overflow: hidden;
 }
 
 #TNav {
@@ -7,6 +8,7 @@ body {
     backdrop-filter: blur(7px);
     height: 70px;
     width: 100%;
+    overflow: hidden;
   }
 
   .NameOfWeb {
