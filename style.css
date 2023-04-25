@@ -8,7 +8,7 @@
 }
 
 .logoQuote {
-    background: url(/Logo/newlogo.png) no-repeat;
+    background: url(Logo/newlogo.png) no-repeat;
     background-size: contain;
     background-position: center;
     height: 80vh;
